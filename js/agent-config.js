@@ -12,7 +12,7 @@ window.HR_AGENT_CONFIG = {
   vapiPublicKey: "",     // e.g. "1a2b3c4d-...."  (PUBLIC key only)
   vapiAssistantId: "",   // e.g. "9f8e7d6c-...."
 
-  agentName: "Hazel",
-  tagline: "Horner Realty's virtual agent",
-  bubbleText: "Talk to me!"
+  agentName: "Ramon",
+  tagline: "Your Horner Realty concierge",
+  bubbleText: "Hi, I'm Ramon — talk to me!"
 };
