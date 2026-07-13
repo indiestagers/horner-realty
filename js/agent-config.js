@@ -9,8 +9,8 @@
    ============================================================ */
 
 window.HR_AGENT_CONFIG = {
-  vapiPublicKey: "",     // e.g. "1a2b3c4d-...."  (PUBLIC key only)
-  vapiAssistantId: "",   // e.g. "9f8e7d6c-...."
+  vapiPublicKey: "6eb62d52-cfac-4e98-bc6a-88e25c7291ce",   // public share key (client-safe)
+  vapiAssistantId: "7924e3f2-2b92-4e5e-aca2-fcf9901e6a32",
 
   agentName: "Ramon",
   tagline: "Your Horner Realty concierge",
