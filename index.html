@@ -52,8 +52,14 @@
     <section class="hero-stage" aria-label="From house to home">
       <div class="hero hero--story">
         <div class="hero__bg hero__story-media" aria-hidden="true">
-          <img class="hero__after" src="assets/img/hero/room-lived-in.png" alt="" fetchpriority="high">
-          <img class="hero__before" src="assets/img/hero/room-empty.png" alt="" fetchpriority="high">
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/img/hero/room-lived-in-mobile.jpg">
+            <img class="hero__after" src="assets/img/hero/room-lived-in.png" alt="" fetchpriority="high">
+          </picture>
+          <picture>
+            <source media="(max-width: 640px)" srcset="assets/img/hero/room-empty-mobile.jpg">
+            <img class="hero__before" src="assets/img/hero/room-empty.png" alt="" fetchpriority="high">
+          </picture>
           <div class="hero__seam"></div>
         </div>
         <div class="container hero__inner">

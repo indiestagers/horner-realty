@@ -42,6 +42,9 @@ function hrInitHeader() {
 function hrInitHeroStage() {
   const stage = document.querySelector(".hero-stage");
   if (!stage || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // On mobile the scroll-story is replaced by a CSS auto-reveal (see style.css);
+  // bail so JS doesn't overwrite the animated clip-path with inline styles.
+  if (window.matchMedia("(max-width: 640px)").matches) return;
 
   const hero = stage.querySelector(".hero--story");
   const before = stage.querySelector(".hero__before");
