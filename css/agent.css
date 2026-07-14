@@ -13,7 +13,11 @@
   align-items: flex-end;
   gap: 1rem;
   font-family: var(--sans);
+  pointer-events: none;
 }
+
+.hra-panel,
+.hra-fab-wrap { pointer-events: auto; }
 
 /* ---------- Floating avatar button ---------- */
 .hra-fab-wrap {
@@ -369,6 +373,17 @@
   display: flex; justify-content: space-between; align-items: center;
 }
 .hra-foot b { color: var(--green-2); font-weight: 650; }
+
+@media (max-width: 1500px), (max-height: 900px) {
+  .hra-bubble { display: none; }
+}
+
+@media (max-width: 640px) {
+  .hra-root { right: 0.75rem; bottom: 0.75rem; }
+  .hra-fab { width: 56px; height: 56px; }
+  .hra-presence { width: 14px; height: 14px; }
+  .hra-panel { width: min(358px, calc(100vw - 1.5rem)); border-radius: 18px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .hra-fab-wrap, .hra-fab::before, .hra-avatar::before, .hra-presence::after,
